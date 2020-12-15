@@ -10,12 +10,12 @@ Lösung:     machine_numbers(15,5)
 '''
 
 
-def machine_numbers(digits_float, digits_power, system=2, verbose=False):
+def machine_numbers(digits_float, digits_power, base=2, verbose=False):
     # die erste Nachkommaziffer muss 1 sein, mit dem Vorzeichen gleicht sich das wieder aus
-    possibilities = (system ** digits_float)
+    possibilities = (base ** digits_float)
     # fuer den Exponenten gibt es 2^digits_power moeglichkeiten,
     # mit vorzeichen 2^(digits_power+1) - 1 weil die Null doppelt gezählt wird.
-    possibilities_power = (system ** (digits_power + 1)) - 1
+    possibilities_power = (base ** (digits_power + 1)) - 1
     possibilities_total = possibilities * possibilities_power
 
     if verbose:
