@@ -7,6 +7,12 @@ Beispiel:   Bestimmen Sie die Anzahl verschiedener Maschinenzahlen auf
 
 Lösung:     machine_numbers(15,5)
         =>  2064384 2064385
+
+Beispiel:   Geben Sie die Maschinengenauigkeit einer Rechenmaschine an die mit
+            16-stelliger Dezimalarithmetik arbeitet
+
+Lösung:     machine_precision(16,10)
+        =>  5 * 10^(-16)
 """
 
 
@@ -44,5 +50,5 @@ def machine_precision(digits, base):
     return (base / 2) * (base ** -digits)
 
 
-#   machine_numbers(15, 5)
-print(machine_precision(16, 10))
+#   print(machine_numbers(15, 5))
+#   print(machine_precision(16, 10))
