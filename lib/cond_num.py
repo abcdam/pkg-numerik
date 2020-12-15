@@ -10,7 +10,5 @@ import numpy as np
 # condition K is small -> well conditioned problem
 # condition K is big   -> badly conditioned problem
 #
-def calculate_cond(function, x0, step=0.1, nth_derivative=1):
-    return (np.abs(derivative(function, x0, step, nth_derivative)*np.abs(x0))/np.abs(function(x0))
-
- 
+def calculate_cond(function, x0, step=1, nth_derivative=1):
+    return np.abs(derivative(function, x0, step, nth_derivative),dtype='float64')*np.abs(x0,dtype='float64')/np.abs(function(x0),dtype='float64')
