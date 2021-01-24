@@ -49,6 +49,7 @@ def machine_precision(digits, base):
 
     return (base / 2) * (base ** -digits)
 
+# example
 
-#   print(machine_numbers(15, 5))
-#   print(machine_precision(16, 10))
+print(machine_numbers(15, 5))
+print(machine_precision(16, 10))

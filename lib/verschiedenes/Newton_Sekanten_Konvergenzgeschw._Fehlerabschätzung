@@ -1,0 +1,16 @@
+# Skript S. 34 - 36
+# KonvergenzgeschwindigkeitFehlerabschätzung
+# Für einfache Nullstellen konvergiert das Newton-Verfahren quadratisch,
+# das vereinfachte Newton-Verfahren linear,
+# und für das Sekantenverfahren gilt q = (1 + sqrt(5)/2 = 1.618....
+# q = Konvergenzordnung.
+# Beispiel: q = 1: lineare Konvergenz, q = 2: quadratische Konvergenz
+# Formel x_quer: Folge konvergiert nach x_quer
+# |x_n+1 - x_quer| ≤ c * |xn - x_quer|**q
+# Konvergenzordnung q ≥ 1, wenn es eine Konstante c > 0 gibt.
+# Fall q = 1, dann c < 1.
+
+# Fehlerabschätzung
+# Fehler für x3: f(x3 - 10**-5) < 0 und f(x3 + 10**-5) > 0
+# x ist Element [x3 - 10**-5, x3 + 10**-5). Absoluter Fehler |x - x3| ≤ 10**-5
+# Z.B. bei f(x) = x**2 - 2 = 0  gilt |sqrt(2) - x3| = sqrt(2) * 10**-6
